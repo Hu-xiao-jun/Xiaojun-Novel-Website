@@ -1,10 +1,12 @@
 #streamlit 运行需要打开终端输入 streamlit run "./AI_streamlit_test.py"
 import streamlit as st
+from PIL import Image
 
 #网页界面设置
+icon_img = Image.open("resource/xiaoguang.png")
 st.set_page_config(
     page_title = "晓俊小说网-《别去后山！》",
-    page_icon = "🧊",
+    page_icon = icon_img,
     layout = "centered",
     menu_items = {}
 )
